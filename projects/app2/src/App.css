@@ -1,11 +1,11 @@
-.card{
+.chat{
     display: flex;
     align-items: center;
     color: white;
     justify-content: space-between;
 }
 
-.card-body{
+.chat-body{
     display: flex;
     align-items: center;
     gap: 4px;
@@ -20,32 +20,40 @@ article header span{
     opacity: .6;
 }
 
-.card-img{
+.chat-img{
     width: 48px;
     height: 48px;
     border-radius: 1000px;
 }
 
-.card-button{
+.chat-state{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(206, 27, 51);
+    transition: .4s ease background-color;
+}
+
+.chat-button{
     cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
-    transition: .3s ease background-color;
+    transition: .4s ease background-color;
 }
 
-.card-button.card-button-following{
-    border: 1px solid red;
+.chat-state-active{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(7, 185, 37);
+    transition: .4s ease background-color;
 }
 
-.card-button:hover{
+.chat-button:hover{
     background-color: #09f;
-   
-
-}
-
-.card-button.card-button-following:hover{
-    background-color: red;
 }
